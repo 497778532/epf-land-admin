@@ -1,0 +1,96 @@
+body {
+		background-color: #ffffff;
+	}
+	
+/* input[type=checkbox].ace.ace-switch.ace-switch-5+.lbl::before { */
+/* 	width: 66px; */
+/* 	content: "鍚姩\a0\a0\a0\a0\a0\a0\a0\a0\a0绂佹"; */
+/* } */
+
+input[type="checkbox"].ace.ace-switch.ace-switch-4:checked+.lbl::after,input[type="checkbox"].ace.ace-switch.ace-switch-5:checked+.lbl::after
+	{
+	left: 44px;
+}
+
+.ui-jqgrid .ui-jqgrid-toppager .ui-pager-control,.ui-jqgrid .ui-jqgrid-pager .ui-pager-control
+	{
+	height: 34px;
+}
+	
+.fm-button {
+	height: 32px;
+}
+
+.ui-jqgrid .ui-jqgrid-btable {
+	border-left-width: 1px;
+}
+
+.ui-jqgrid-hdiv .ui-jqgrid-htable {
+	border-left-width: 1px;
+}
+.menu-content{
+	position: absolute;
+    z-index: 9999;
+    left: 32.5px;
+    top: 66px;
+    background: #fff;
+    border: 1px #ccc solid;
+    background-color: white;
+    min-height: 300px;
+    min-width: 210px;
+    display: none;
+}
+.nav-search{
+	position:relative;
+	float: left;
+	right:0px;
+}
+/**淇敼鍚姩...绂佹寮傚父鏍峰紡**/
+.EditTable tr.FormData td{
+	white-space : pre;
+}
+.row{
+	margin:0px
+}
+.col-md-12{
+	padding: 0px;
+}
+.page-content{
+	padding:0px;
+}
+/** tab 鑷畾涔夋牱寮� **/
+		
+.btn-tab{
+	float:left;
+	top:6px;
+	margin-left:10px;
+	height:28px;!important;
+}
+.btn-tab button{
+	height:28px;!important
+}
+		
+.widget-tab{
+	background: #307ecc; 
+	font-size: 15px; 
+	color: #fff;
+	line-height: 33px;
+}	
+.ui-tab{
+	height: 38px; 
+	background-color: rgb(224, 224, 224);
+	line-height: 35px;
+	padding-left: 10px;
+}
+.search-tab{
+	padding-left:5px; 
+	width:210px!important;
+	font-weight:bold;
+	font-size:12px!important;
+}
+
+.search-i{
+	left : auto ;
+	right:3px;!important;
+	cursor:pointer;
+}

@@ -1,0 +1,176 @@
+@import "./var.less";
+*{ margin: 0;padding: 0;
+body { color: @con-font;}
+h1,h2,h3,h4,h5,h6 { font-weight: normal;}
+em,i { font-style: normal;}
+ul,ol,dl { list-style: none;}
+ul,li {LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none}
+a { text-decoration: none; border:none;}
+img { border: none; vertical-align: top;}
+table { border-collapse: collapse;}
+button { outline: none;}
+input,textarea {outline: none;}
+textarea { resize: none; overflow: auto;}
+/* 默认滚动条样式修改 */
+&::-webkit-scrollbar { height: 11px;width: 11px;}
+&::-webkit-scrollbar-thumb { /* 滚动块 */
+  background-color: rgba(128, 128, 128, 0.6);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  border-radius: 11px;
+  &:hover {background-color: rgb(128, 128, 128)}
+}}
+/* 全局宽度100%类 */
+.epf_width_100{
+  width: 100% !important;
+}
+
+/* 全局行内元素类 */
+.epf_inline{
+  display: inline-block;
+}
+
+/* 全局应用固定类 */
+.epf_absolute {
+  position: absolute;
+  top: 0;right: 0;
+  bottom: 0;left: 0;
+}
+
+/* 全局flex布局类 */
+.epf_flex {display: flex;align-items: center;}
+.epf_flex_size {flex: 1;}
+
+/* 全局浮动类 */
+.epf_f_left {float: left;}
+.epf_f_right {float: right;}
+
+/* 全局清除浮动类 */
+
+
+
+/* 全局左中右排列类 */
+.epf_align_right{text-align: right;}
+.epf_align_left{text-align: left;}
+.epf_align_center{text-align: center;}
+
+/* 全局禁止文字选择类 */
+.epf_not_choice{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+}
+
+/* 1、基础平台自定义条件筛选按钮类
+*  注：需要 epf_btn 与 epf_btn_bg
+*  两个类结合使用
+*/
+.epf_btn{
+  margin-left:10px;
+  display: inline-block;
+  box-sizing: border-box;
+  min-width:60px;
+  height:34px;
+  padding: 0 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 32px;
+  display: inline-block;
+  cursor: pointer;
+  &:active{transform: translateY(1px);}
+}
+/* 全局按钮点击效果类 */
+.epf_btn_active:active{transform: translateY(1px)}
+/* 按钮风格类 */
+.epf_btn_bg{background:#409EFF;color: #fff;
+  border:1px solid #4e88fe;}
+.epf_btn_def{background: #fff;color: #606266;
+  border:1px solid #ddd;}
+/* END */
+
+/* 2、基础平台左右布局页面内容盒子
+*  epf_fr_box：最外层盒子
+*  epf_fr_search：搜索条件盒子
+*  epf_fr_content：内容盒子
+*/
+.epf_fr_box{
+  width: 100%;
+  position: relative;
+  clear:both;
+  /* 操作容器类 */
+  .epf_toolbar{ 
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    border: 1px #e6e6e6 solid;
+    border-bottom: none;
+    background: #f2f2f2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    /* 操作容器内容flex类 */
+    .epf_fr_search{display: flex;align-items: center;}
+    /* 操作容器内容title类 */
+    .epf_box_title{padding:0 20px;}
+  }
+  /* 内容容器类 */
+  .epf_fr_content{
+    width: 100%;
+    border: 1px #e6e6e6 solid;
+    position: absolute;
+    top: 50px;
+    overflow: auto;
+    /* 底部分页器固定类 */
+    .epf_paging_fixe{
+      text-align: right;
+      padding: 15px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  /* 内容容器去掉边框类 */
+  .epf_no_border{border: none;}
+}
+/* END */
+
+
+/* 筛选条件容器类 */
+.epf_term_box{
+  padding: 5px 15px;
+}
+/* 全局表单字段名类 */
+.epf_form_title {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 34px;
+  padding-right: 10px;
+  text-align: right;
+  line-height: 34px;
+  .el-row{
+    padding: 5px 0;
+  }
+}
+
+
+/* 弹窗内容溢出类 */
+.epf_over_flow{
+  overflow: auto;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+/* 弹窗按钮组固定类 */
+.epf_popup_fixed{
+  width: 100%;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+.fl{float: left;}
+  .fr{float: right;}
+

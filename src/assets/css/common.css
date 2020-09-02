@@ -1,0 +1,234 @@
+/* 按钮 */
+.button_border {
+  margin: 0 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 60px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid #ffa202;
+  background: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #ffa202;
+  text-align: center;
+  line-height: 32px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button_border:hover {
+  transform: translateY(-3px);
+}
+.button_bg {
+  margin: 0 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 60px;
+  height: 32px;
+  padding: 0 10px;
+  background: #ffa202;
+  border: 1px solid #ffa202;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button_bg:hover {
+  transform: translateY(-3px);
+}
+.button_default {
+  margin: 0 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 60px;
+  padding: 0 10px;
+  height: 34px;
+  border: 1px solid #dddddd;
+  background: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  color: rgb(71, 71, 71);
+  text-align: center;
+  line-height: 32px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button_default:hover {
+  transform: translateY(-3px);
+}
+.button_export {
+  padding: 0 20px;
+  display: inline-block;
+  border: 1px solid #ffa000;
+  color: #ffa000;
+  height: 32px;
+  line-height: 32px;
+  /* width: 50px;
+    height: 28px;
+    border-color: #ffa000;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #ffa000;
+    text-align: center;
+    margin-top: 6px;
+    margin-right: 10px;
+    line-height: 30px; */
+  cursor: pointer;
+  *float: right;
+  transition: 0.3s;
+}
+.button_export:hover {
+  transform: translateY(-3px);
+}
+/* 按钮居中盒子 */
+.bottonBox_center {
+  text-align: center;
+}
+.el-step__head.is-success {
+  color: #ffc86a;
+  border-color: #ffc86a;
+}
+.el-step__title.is-success {
+  color: #ffc86a;
+}
+.el-step__head.is-process {
+  color: #ffa202;
+  border-color: #ffa202;
+}
+.el-step__title.is-process {
+  font-weight: 700;
+  color: #ffa202;
+}
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: #ffa202;
+  background: #ffa202;
+}
+.el-radio__input.is-checked + .el-radio__label {
+  color: #ffa202;
+}
+/* 弹框中内容滚动 */
+.abow_dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.abow_dialog .el-dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto !important;
+  max-height: 90%;
+  overflow: hidden;
+}
+.abow_dialog .el-dialog .el-dialog__body {
+  height: 80%;
+  padding: 20px 20px;
+  z-index: 1;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.el-dialog__footer {
+  box-sizing: border-box;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #dddddd;
+}
+/* loading颜色 */
+.el-loading-spinner .path {
+  stroke: #ffa202;
+}
+.el-loading-spinner .circular {
+  width: 50px;
+  height: 50px;
+}
+.el-loading-spinner .el-loading-text {
+  color: #ffa202;
+  font-size: 14px;
+}
+/* 控制台卡片head的样式覆盖 */
+.el-card__header {
+  padding: 10px 20px;
+}
+.menuRightItem:hover {
+  cursor: pointer;
+  background: rgba(241, 241, 241, 0.904) !important;
+}
+
+/* 隐藏IE浏览器自带的 X 和 眼睛 */
+input::-ms-reveal {
+  display: none;
+}
+input::-ms-clear {
+  display: none;
+}
+/* 搜索外框 */
+.switchHeight_box {
+  /* padding-top: 25px;
+    padding-bottom: 10px; */
+  transition: 0.5s;
+  margin: 20px;
+  margin-bottom: 0;
+  padding-top: 16px;
+  border: 1px solid #e1e1e1;
+  /* background: #fff; */
+}
+.filter_wrap .el-row {
+  /* padding-bottom: 16px; */
+}
+.switchHeight_box .el-form-item {
+  margin-bottom: 14px;
+}
+.filter_wrap {
+  box-sizing: border-box;
+  padding: 2px;
+  -webkit-box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+}
+.filter_wrap[data-v-60fb67bb]  {
+    background: #fff;
+}
+.pageName    {
+  padding-left: 15px;
+  margin-bottom: 15px;
+  border-left: 4px solid rgba(26, 188, 156, 6);
+}
+.toolsTips  {
+  line-height: 40px;
+  font-size: 14px;
+  margin-left: 10px;
+  color:red;
+}.box-body    {
+  width: 100%;
+  overflow: auto;
+}.carditem {
+  width: 150px;
+  height: 170px;
+  margin: 5px 5px;
+  position: relative;
+  padding: 5px;
+  border-radius: 6px;
+  cursor: default;
+  transition: 0.4s;
+  border: 1px solid #fff;
+  z-index: 99 !important;
+}
+.carditem:hover {
+  box-shadow: 0px 5px 10px rgb(134, 134, 134);
+  border: 1px solid rgb(211, 211, 211);
+}
+
+.carditem:hover {
+  /* border: 1px solid rgb(211, 211, 211); */
+}
+.carditem:hover .cardbottom {
+  color: #409eff;
+}
